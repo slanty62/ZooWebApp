@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐾 Зоомагазин</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .navbar-brand { font-size: 1.5rem; font-weight: bold; color: #2c3e50 !important; }
+        .card { transition: transform 0.2s; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .hero-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; border-radius: 10px; margin-bottom: 40px; }
+        .hero-section h1 { font-size: 3rem; font-weight: bold; }
+        .category-badge { background-color: #e74c3c; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; }
+        footer { background-color: #ffffff; border-top: 1px solid #dee2e6; padding: 20px 0; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">🐾 Зоомагазин</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Товары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero-section text-center">
+            <div class="container">
+                <h1>Добро пожаловать в зоомагазин! 🐶</h1>
+                <p class="lead">Всё для ваших любимых питомцев в одном месте</p>
+                <a href="#products" class="btn btn-light btn-lg">Смотреть товары</a>
+            </div>
+        </div>
+
+        <section id="categories" class="mb-5">
+            <h2 class="text-center mb-4">Категории товаров</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>🐶</h3>
+                            <h5 class="card-title">Собаки</h5>
+                            <p class="card-text">Корм, игрушки, аксессуары</p>
+                            <a href="#products" class="btn btn-primary">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>🐱</h3>
+                            <h5 class="card-title">Кошки</h5>
+                            <p class="card-text">Корм, лотки, когтеточки</p>
+                            <a href="#products" class="btn btn-primary">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>🐦</h3>
+                            <h5 class="card-title">Птицы</h5>
+                            <p class="card-text">Корм, клетки, игрушки</p>
+                            <a href="#products" class="btn btn-primary">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>🐠</h3>
+                            <h5 class="card-title">Рыбы</h5>
+                            <p class="card-text">Корм, аквариумы, фильтры</p>
+                            <a href="#products" class="btn btn-primary">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="mb-5">
+            <h2 class="text-center mb-4">Наши товары</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Royal+Canin" class="card-img-top" alt="Корм для собак">
+                        <div class="card-body">
+                            <h5 class="card-title">Сухой корм Royal Canin</h5>
+                            <span class="category-badge">Собаки</span>
+                            <p class="card-text mt-2">Высококачественный сухой корм для собак всех пород</p>
+                            <p class="card-text"><strong>Цена:</strong> 2 500 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 50 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Игрушка" class="card-img-top" alt="Игрушка для кошек">
+                        <div class="card-body">
+                            <h5 class="card-title">Игрушка-мяч для кошек</h5>
+                            <span class="category-badge">Кошки</span>
+                            <p class="card-text mt-2">Интерактивная игрушка для активных кошек</p>
+                            <p class="card-text"><strong>Цена:</strong> 450 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 30 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Корм+для+птиц" class="card-img-top" alt="Корм для птиц">
+                        <div class="card-body">
+                            <h5 class="card-title">Зерновой корм для птиц</h5>
+                            <span class="category-badge">Птицы</span>
+                            <p class="card-text mt-2">Сбалансированный корм для попугаев и канареек</p>
+                            <p class="card-text"><strong>Цена:</strong> 350 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 100 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>О нас</h2>
+                    <p>Мы - команда профессионалов, заботящихся о здоровье и счастье ваших питомцев. Наш зоомагазин предлагает только качественные товары от проверенных производителей.</p>
+                    <ul>
+                        <li>✅ Только сертифицированные товары</li>
+                        <li>✅ Лучшие цены в городе</li>
+                        <li>✅ Доставка по всей стране</li>
+                        <li>✅ Профессиональные консультации</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Наши преимущества</h5>
+                            <p><strong>⭐ 4.9</strong> из 5 на основе 127 отзывов</p>
+                            <p><strong>🏆</strong> Лучший зоомагазин 2023</p>
+                            <p><strong>📦</strong> Бесплатная доставка от 3000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>📍</h3>
+                            <h5>Адрес</h5>
+                            <p>г. Москва, ул. Ленина, д. 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>📞</h3>
+                            <h5>Телефон</h5>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h3>✉️</h3>
+                            <h5>Email</h5>
+                            <p>info@zoological-store.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>© 2024 Зоомагазин. Все права защищены.</p>
+            <p><a href="#" class="text-decoration-none me-3">ВКонтакте</a><a href="#" class="text-decoration-none me-3">Telegram</a><a href="#" class="text-decoration-none">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
