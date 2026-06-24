@@ -1,0 +1,131 @@
+/* wwwroot/css/site.css - добавить */
+
+/* Категории */
+.categories {
+    padding: 60px 0;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.category-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(45, 122, 107, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e8f3ef;
+}
+
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(45, 122, 107, 0.15);
+    }
+
+.category-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Товары */
+.featured-products {
+    background: #eef8f5;
+    padding: 60px 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s;
+    border: 1px solid #dfece7;
+}
+
+    .product-card:hover {
+        box-shadow: 0 8px 24px rgba(45, 122, 107, 0.12);
+        transform: scale(1.02);
+    }
+
+.product-image {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d7a6b;
+    margin: 10px 0;
+}
+
+.btn-sm {
+    background: #2d7a6b;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 0.9rem;
+}
+
+    .btn-sm:hover {
+        background: #1c6456;
+    }
+
+.section-title {
+    text-align: center;
+    font-weight: 300;
+    color: #1f4e47;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Преимущества */
+.advantages {
+    padding: 50px 0;
+    background: white;
+}
+
+    .advantages .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+.advantage-item {
+    text-align: center;
+    flex: 1 1 150px;
+}
+
+    .advantage-item span {
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .advantage-item h4 {
+        color: #1f4e47;
+        font-weight: 500;
+    }
+
+    .advantage-item p {
+        color: #5a7d74;
+        font-size: 0.9rem;
+    }

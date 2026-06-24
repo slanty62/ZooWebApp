@@ -1,0 +1,47 @@
+﻿@model ZooWebApp.Models.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = "Зоомагазин Лапки";
+}
+
+<section class="hero">
+    <div class="container">
+        <h2>🐾 Добро пожаловать в «Лапки»</h2>
+        <p>Забота о питомцах — наша главная ценность</p>
+        <a href="#" class="btn">Посмотреть товары</a>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="container">
+        <h2 class="section-title">📂 Категории</h2>
+        <div class="categories-grid">
+            @foreach (var category in Model.Categories)
+            {
+                <div class="category-card">
+                    <span class="category-icon">@category.Icon</span>
+                    <h3>@category.Name</h3>
+                    <p>@category.Description</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="featured-products">
+    <div class="container">
+        <h2 class="section-title">⭐ Рекомендуем</h2>
+        <div class="products-grid">
+            @foreach (var product in Model.FeaturedProducts)
+            {
+                <div class="product-card">
+                    <div class="product-image">@(product.ImageEmoji ?? "📦")</div>
+                    <h3>@product.Name</h3>
+                    <p>@product.Description</p>
+                    <div class="price">@product.Price.ToString("C")</div>
+                    <button class="btn-sm">🛒 В корзину</button>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,18 +1,47 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# .NET Core
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.pidb
+*.log
+*.bak
+*.ncrunch
+*.crunch.local.xml
+*.rd.xml
+*.pfx
+*.publishsettings
+*.dll
+*.exe
+*.pdb
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Visual Studio
+.vs/
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+*.suo
+*.user
+*.sln.docstates
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# Visual Studio Code
+.vscode/
+
+# Node modules
+node_modules/
+
+# GitHub Pages
+!.gitignore
