@@ -9,15 +9,18 @@
         body { background-color: #f8f9fa; }
         .navbar { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .navbar-brand { font-size: 1.5rem; font-weight: bold; color: #2c3e50 !important; }
-        .card { transition: transform 0.2s; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .card { transition: transform 0.2s; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px; height: 100%; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .card-img-top { height: 200px; object-fit: cover; }
         .hero-section { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; border-radius: 10px; margin-bottom: 40px; }
         .hero-section h1 { font-size: 3rem; font-weight: bold; }
         .category-badge { background-color: #e74c3c; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; }
+        .product-image { width: 100%; height: 200px; object-fit: cover; background-color: #f0f0f0; }
         footer { background-color: #ffffff; border-top: 1px solid #dee2e6; padding: 20px 0; margin-top: 40px; }
     </style>
 </head>
 <body>
+    <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">🐾 Зоомагазин</a>
@@ -36,6 +39,7 @@
     </nav>
 
     <div class="container">
+        <!-- Hero секция -->
         <div class="hero-section text-center">
             <div class="container">
                 <h1>Добро пожаловать в зоомагазин! 🐶</h1>
@@ -44,6 +48,7 @@
             </div>
         </div>
 
+        <!-- Категории -->
         <section id="categories" class="mb-5">
             <h2 class="text-center mb-4">Категории товаров</h2>
             <div class="row">
@@ -90,12 +95,14 @@
             </div>
         </section>
 
+        <!-- Товары с реальными картинками -->
         <section id="products" class="mb-5">
             <h2 class="text-center mb-4">Наши товары</h2>
             <div class="row">
+                <!-- Товар 1: Корм для собак -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Royal+Canin" class="card-img-top" alt="Корм для собак">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&h=300&fit=crop" class="card-img-top" alt="Корм для собак">
                         <div class="card-body">
                             <h5 class="card-title">Сухой корм Royal Canin</h5>
                             <span class="category-badge">Собаки</span>
@@ -106,9 +113,11 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Товар 2: Игрушка для кошек -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Игрушка" class="card-img-top" alt="Игрушка для кошек">
+                        <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400&h=300&fit=crop" class="card-img-top" alt="Игрушка для кошек">
                         <div class="card-body">
                             <h5 class="card-title">Игрушка-мяч для кошек</h5>
                             <span class="category-badge">Кошки</span>
@@ -119,9 +128,11 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Товар 3: Корм для птиц -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Корм+для+птиц" class="card-img-top" alt="Корм для птиц">
+                        <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=400&h=300&fit=crop" class="card-img-top" alt="Корм для птиц">
                         <div class="card-body">
                             <h5 class="card-title">Зерновой корм для птиц</h5>
                             <span class="category-badge">Птицы</span>
@@ -132,9 +143,55 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Товар 4: Аквариум -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?w=400&h=300&fit=crop" class="card-img-top" alt="Аквариум">
+                        <div class="card-body">
+                            <h5 class="card-title">Аквариум 50 литров</h5>
+                            <span class="category-badge">Рыбы</span>
+                            <p class="card-text mt-2">Стеклянный аквариум с подсветкой и фильтром</p>
+                            <p class="card-text"><strong>Цена:</strong> 5 200 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 15 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 5: Лежанка для кошек -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400&h=300&fit=crop" class="card-img-top" alt="Лежанка для кошек">
+                        <div class="card-body">
+                            <h5 class="card-title">Лежанка для кошек</h5>
+                            <span class="category-badge">Кошки</span>
+                            <p class="card-text mt-2">Мягкая и теплая лежанка для вашего питомца</p>
+                            <p class="card-text"><strong>Цена:</strong> 1 800 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 25 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 6: Поводок для собак -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&h=300&fit=crop" class="card-img-top" alt="Поводок для собак">
+                        <div class="card-body">
+                            <h5 class="card-title">Поводок для собак</h5>
+                            <span class="category-badge">Собаки</span>
+                            <p class="card-text mt-2">Прочный и надежный поводок для выгула</p>
+                            <p class="card-text"><strong>Цена:</strong> 650 ₽</p>
+                            <p class="card-text"><strong>В наличии:</strong> 40 шт.</p>
+                            <button class="btn btn-success w-100">В корзину</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- О нас -->
         <section id="about" class="mb-5">
             <div class="row">
                 <div class="col-md-6">
@@ -160,6 +217,7 @@
             </div>
         </section>
 
+        <!-- Контакты -->
         <section id="contact" class="mb-5">
             <h2 class="text-center mb-4">Контакты</h2>
             <div class="row">
@@ -194,10 +252,15 @@
         </section>
     </div>
 
+    <!-- Подвал -->
     <footer>
         <div class="container text-center">
             <p>© 2024 Зоомагазин. Все права защищены.</p>
-            <p><a href="#" class="text-decoration-none me-3">ВКонтакте</a><a href="#" class="text-decoration-none me-3">Telegram</a><a href="#" class="text-decoration-none">Instagram</a></p>
+            <p>
+                <a href="#" class="text-decoration-none me-3">ВКонтакте</a>
+                <a href="#" class="text-decoration-none me-3">Telegram</a>
+                <a href="#" class="text-decoration-none">Instagram</a>
+            </p>
         </div>
     </footer>
 
